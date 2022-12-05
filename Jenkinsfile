@@ -1,7 +1,7 @@
 pipeline {
     environment {
         OTP_CDO_DATETIME = "${new Date().format("yyyyMMddHHmm")}"
-        OTP_CDO_VERSION = OTP_CDO_DATETIME
+        OTP_CDO_VERSION = "${OTP_CDO_DATETIME}"
     }
     options {
         timeout(time: 10, unit: "MINUTES")
