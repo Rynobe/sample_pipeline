@@ -14,6 +14,8 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Rynobe/sample_pipeline.git']]])
             }
+        }
+        stage('Time') {
             steps{
                 echo '${new Date().format("yyyyMMddHHmm")}'
             }
