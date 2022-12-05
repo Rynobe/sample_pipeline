@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        OTP_CDO_DATETIME = "${new Date().format("yyyyMMddHHmmss")}"
+        OTP_CDO_DATETIME = "${new Date().format("yyyyMMddHHmm")}"
         OTP_CDO_VERSION = "${OTP_CDO_DATETIME}"
     }
     options {
