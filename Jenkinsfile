@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Time') {
             steps{
-                echo 'OTP_CDO_DATETIME'
+                echo '$OTP_CDO_DATETIME'
             }
         }
     }
