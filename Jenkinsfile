@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Time') {
             steps{
-                echo 'new Date().format("yyyyMMddHHmm")'
+                echo 'OTP_CDO_DATETIME'
             }
         }
     }
